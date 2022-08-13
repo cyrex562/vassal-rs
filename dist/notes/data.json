@@ -1,0 +1,82 @@
+{
+  "headline": "The VASSAL Team is happy to announce VASSAL {{version}}.",
+  "important": [
+    "NEW! 64-bit ARM packages: There are now MacOS and Windows packages for 64-bit ARM processors. If you have a Mac with an Apple Silicon CPU (which is a 64-bit ARM processor), we recommend using the 64-bit ARM build.",
+    "Code deprecated more than a year ago has been removed. Modules containing custom code using that code MUST be updated if they are to work with {{version_feature}}.",
+    "Things may be broken which worked previously. If you find a new bug, please report it.",
+    "Modules saved in {{version_feature}} are not openable by earlier versions of VASSAL. We recommend keeping a backup copy of any pre-{{version_feature}} modules you plan to modify in {{version_feature}} until you've verified that everything works to your satisfaction."
+  ],
+  "downloads": [
+    { "display_name": "Linux", "suffix": "linux.tar.bz2" },
+    { "display_name": "MacOS (64-bit ARM)", "suffix": "macos-aarch64.dmg" },
+    { "display_name": "MacOS (64-bit x86)", "suffix": "macos-x86_64.dmg" },
+    { "display_name": "Windows (64-bit ARM)", "suffix": "windows-aarch64.exe" },
+    { "display_name": "Windows (64-bit x86)", "suffix": "windows-x86_64.exe" },
+    { "display_name": "Windows (32-bit x86)", "suffix": "windows-x86_32.exe" },
+    { "display_name": "Other", "suffix": "other.zip" }
+  ],
+  "changes": [
+    {
+      "in": "3.6.8",
+      "since": "3.6.7",
+      "new_features": [
+      ],
+      "bug_fixes": [
+        { "num": 11617, "desc": "Closing a reopenable Map should not close game" },
+        { "num": 11565, "desc": "Global Option List Preferences not initialising Global Property correctly" },
+        { "num": 11544, "desc": "Broken links to and within Reference Manual" },
+        { "num": 11543, "desc": "Closing game should reset multiplayer flag for console" },
+        { "num": 11540, "desc": "Display translated Basic Piece/Basic Name in Scrollable lists in Game Piece Palette" },
+        { "num": 11537, "desc": "Cancel key in Multi-Piece Editor (Edit all contained pieces) correctly backs out with no changes" },
+        { "num": 11515, "desc": "Piece dropped into incorrect position in the stack when dragging within a stack to a lower position" },
+        { "num": 11513, "desc": "Piece \"disappears\" when dragged to grid space with an existing stack and \"snap to defined point\"" },
+        { "num": 11510, "desc": "Updated Opt-in version of the 'Leading Zeros in Integers' handing" },
+        { "num": 11496, "desc": "Safer GKC Configurer for Fixed # From Deck" }
+      ],
+      "other_improvements": [
+        { "num": 11570, "desc": "Update Module Extension window, add missing description" },
+        { "num": 11564, "desc": "Prevent Notes windows always starting open at very last character of note" },
+        { "num": 11557, "desc": "Auto-select contents of Edit boxes when they get focus" },
+        { "num": 11546, "desc": "Default dialog-closing button behaviors for Enter/Esc; Key shortcuts added to Piece Definer (see Game Piece help); Piece Definer list boxes jump to entry starting with that letter; Key shortcuts added editing Layer trait (see Layer help); Most text fields support Ctrl/Cmd+Z for undo/redo" },
+        { "num": 11545, "desc": "Description of Prototype will auto-include any BasicName" },
+        { "num": 11534, "desc": "Add Open all Contained Pieces option" },
+        { "num": 11524, "desc": "Option to 'always use format' on text label (even if label is blank)" },
+        { "num": 11521, "desc": "BoundsTracker - Track bounds and repaint just for the regions of added pieces; rather than the whole map" },
+        { "num": 11499, "desc": "TurnTracker Forward Only Toggle: Allow module designers to disable the backwards TurnTracker button" },
+        { "num": 11497, "desc": "Don't play sounds while fast-forwarding a log" }
+      ]
+    },
+    {
+      "in": "3.6.7",
+      "since": "3.6.6",
+      "new_features": [
+      ],
+      "bug_fixes": [
+        { "num": 11465, "desc": "DoActionButton claims its icon in remove-unused-images" },
+        { "num": 11417, "desc": "Fix Ctrl key with Does Not Stack trait" },
+        { "num": 11406, "desc": "Don't show image scale option for panels inside Chart Windows" },
+        { "num": 11388, "desc": "Correctly draw hex coordinates for odd-numbered columns spanning tile boundaries" },
+        { "num": 11372, "desc": "Delayed Notes from subsequent saves displayed out of order" },
+        { "num": 11369, "desc": "Leading zeros handling in Set Dynamic Property" },
+        { "num": 11362, "desc": "Match expanded Inventory nodes by entry value, not by display text" },
+        { "num": 11347, "desc": "Inventory should not reveal face down deck images" },
+        { "num": 11344, "desc": "Prevent Undo from triggering Deck Empty Hotkey" },
+        { "num": 11343, "desc": "Ensure that the pivot point is used for rotating Cargo" },
+        { "num": 11329, "desc": "Invisible Pieces belonging to another player can still stack together" }
+      ],
+      "other_improvements": [
+        { "num": 11487, "desc": "Removed obsolete option from startup script" },
+        { "num": 11460, "desc": "Show a dialog when connection to the game server is lost" },
+        { "num": 11446, "desc": "Tweak version number display in online window (numbers at end, grayed out)" },
+        { "num": 11414, "desc": "Improved version mismatch messaging" },
+        { "num": 11373, "desc": "Make columns in Delayed Notes table sortable" },
+        { "num": 11361, "desc": "Allow Calculated properties to set Game Piece Layer" },
+        { "num": 11356, "desc": "SetupStack can match literal grid names even if Zone only reports Zone name (e.g., uses $name$ as Location Format)" },
+        { "num": 11351, "desc": "Documented that Mats w/ cargo can't go in decks" },
+        { "num": 11348, "desc": "Polygon Editor improvements (move whole shape, tab between points)" },
+        { "num": 11346, "desc": "Update bundled Java to 18" },
+        { "num": 11330, "desc": "Allow .toString() to be called properly on property names in Beanshell" }
+      ]
+    }
+  ]
+}

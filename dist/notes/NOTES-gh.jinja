@@ -1,0 +1,29 @@
+**[Release Notes](https://vassalengine.org/wiki/VASSAL_{{version_feature}}_Release_Notes)**
+
+{% for v in changes[:1] -%}
+**Changes since {{ v['since'] }}**
+
+{% if v['new_features'] -%}
+New features
+
+{% for item in v['new_features'] -%}
+* {{ item.num }}: {{ item.desc }}
+{% endfor %}
+{% endif -%}
+
+{% if v['bug_fixes'] -%}
+Bug fixes
+
+{% for item in v['bug_fixes'] -%}
+* {{ item.num }}: {{ item.desc }}
+{% endfor %}
+{% endif -%}
+
+{% if v['other_improvements'] -%}
+Other improvements
+
+{% for item in v['other_improvements'] -%}
+* {{ item.num }}: {{ item.desc }}
+{% endfor %}
+{% endif -%}
+{% endfor -%}
